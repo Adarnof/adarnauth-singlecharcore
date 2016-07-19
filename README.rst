@@ -1,4 +1,6 @@
-#Adarnauth-SingleCharCore
+=====
+Adarnauth-SingleCharCore
+=====
 
 Adarnauth-SingleCharCore is a Django app for managing users as they relate to a single character in EVE Online.
 
