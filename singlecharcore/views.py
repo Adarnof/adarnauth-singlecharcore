@@ -12,7 +12,7 @@ def login_view(request, tokens):
     user = authenticate(token=token)
     if user.is_active:
         login(request, user)
-        if not token.scopes.all().exists():
+        if not token.can_refresh:
             token.delete()
         next = request.GET.get('next', LOGIN_REDIRECT_URL)
         return redirect(next)
