@@ -26,10 +26,11 @@ Quick start
     ]
     LOGIN_URL = 'singlecharcore:login'
 
-4. Optionally configure redirect URLs and error message::
+4. Optionally configure additional settings::
 
     LOGIN_REDIRECT_URL = 'my_app:view'
     LOGOUT_REDIRECT_URL = 'my_app:public_view'
     ACCOUNT_INACTIVE_MESSAGE = '<h1>Your account is not active. Please contact an admin.</h1>'
+    LOGIN_SCOPES = ['myScope']
 
 5. Run python manage.py migrate to create the singlecharcore models.
